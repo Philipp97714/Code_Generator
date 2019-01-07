@@ -61,7 +61,7 @@ public class Main {
             while(readStringLine != null){
 
                 //Trying to save seperate lines of text in an array.
-                codes.add(readStringLine);
+                codes.add(readStringLine.replace("-", "").replace("Ihr Vodafone Code über 15,00 EUR : ",""));
                 readStringLine = reader.readLine();
 
             }
